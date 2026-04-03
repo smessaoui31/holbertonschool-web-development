@@ -1,0 +1,495 @@
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+/* ==================== HEADER + FIRST SECTIONS TASK 2 ================================= */
+/* HEADER */
+header {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 171px;
+    box-sizing: border-box;
+}
+
+header a img {
+    display: block;
+    width: 167px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 52px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* SECTION HERO */
+.main-part {
+    width: 100%;
+    min-height: 1093px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(7, 22, 41, 0.28) 0%,
+        rgba(7, 22, 41, 0.48) 70%,
+        rgba(7, 22, 41, 0.8) 100%
+    ), url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 220px;
+}
+
+/* MAIN TITLE */
+.main-part h1 {
+    font-weight: 700;
+    font-size: 120px;
+    margin: 0;
+    line-height: 1;
+}
+
+/* sub-title */
+.main-part > div:first-child > p {
+    margin: 38px 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    word-spacing: 52px;
+    text-transform: uppercase;
+}
+
+/* main button */
+.main-part > div:first-child button {
+    width: 162px;
+    height: 44px;
+    background-color: #c271ff;
+    border-radius: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.main-part h2 {
+    margin: 168px 0 70px;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+/* Grill pros */
+.main-part .pros {
+    width: 1009px;
+    margin: 58px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.main-part .pros .pro {
+    width: 150px;
+    text-align: center;
+}
+
+.main-part .pros img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.main-part .pros h3 {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 8px;
+}
+
+.main-part .pro p {
+    width: 100%;
+    top: calc(50.00% + 165px);
+    left: 0;
+    font-family: "Source Sans Pro-Italic", Helvetica;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+/* ==================== QUOTE SECTION ================================= */
+main section:nth-of-type(2) {
+    background-color: #c170ff;
+    padding: 80px 0;
+}
+
+/* Contenair */
+main section:nth-of-type(2) > div {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Image avatar */
+main section:nth-of-type(2) img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+/* Texte */
+main section:nth-of-type(2) blockquote {
+    font-family: "Source Sans Pro", Helvetica;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+/* Name */
+main section:nth-of-type(2) p:first-of-type {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+/* Job */
+main section:nth-of-type(2) p:last-of-type {
+    font-style: italic;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+main section:nth-of-type(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ==================== VIDEO LIST SECTION ================================= */
+
+/* Section */
+main section:nth-of-type(3) {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Title */
+main section:nth-of-type(3) h1 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+/* Contenair of cards */
+main section:nth-of-type(3) > div {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Card container for play button overlay */
+main section:nth-of-type(3) > div > div {
+    position: relative;
+}
+
+main section:nth-of-type(3) > div > div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    padding-bottom: 62.5%;
+    background-image: url('images/play.png');
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+}
+
+/* one card */
+main section:nth-of-type(3) > div > div > div:first-of-type img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;   /* rond */
+    object-fit: cover;
+}
+
+/* Image preview */
+main section:nth-of-type(3) img:first-child {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Video title */
+main section:nth-of-type(3) h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+main section:nth-of-type(3) p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Author */
+main section:nth-of-type(3) > div > div > div:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main section:nth-of-type(3) h3 {
+    font-size: 14px;
+    color: #c170ff;
+}
+
+/* Rating + duration */
+main section:nth-of-type(3) > div > div > div:last-of-type {
+    display: flex;
+    align-items: center;
+    width: 89.8%;
+    margin-left: 5.1%;
+    margin-top: 8px;
+}
+
+/* Star */
+main section:nth-of-type(3) > div > div > div:last-of-type div {
+    display: flex;
+    gap: 4px;
+    width: 41.96%;
+}
+
+main section:nth-of-type(3) > div > div > div:last-of-type img {
+    width: 15px;
+    height: 15px;
+}
+
+main section:nth-of-type(3) > div > div > div:last-of-type p {
+    margin: 0 0 0 auto;
+    width: 13.33%;
+    text-align: right;
+    white-space: nowrap;
+    color: #c271ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ====================MENBERSHIP SECTION================================= */
+
+main section:nth-of-type(4) {
+    background: #071629;
+    padding: 70px 80px 85px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+    column-gap: 40px;
+    text-align: center;
+}
+
+main section:nth-of-type(4) > h1 {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+}
+.highlight {
+    color: #c271ff;
+    font-weight: 700;
+}
+
+main section:nth-of-type(4) > div {
+    display: flex;
+    justify-content: center;
+}
+
+main section:nth-of-type(4) > div > div {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main section:nth-of-type(4) > div > div img {
+    width: 44px;
+    height: 35px;
+    margin-bottom: 16px;
+}
+
+main section:nth-of-type(4) > div > div h2 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+main section:nth-of-type(4) > div > div p {
+    margin: 0 auto;
+    width: 142px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+main section:nth-of-type(4) > button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 162px;
+    height: 44px;
+    border: 0;
+    border-radius: 22px;
+    background: #c271ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ==================== FAQ SECTION ================================= */
+
+main section:nth-of-type(5) {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 60px 20px 0;
+}
+
+main section:nth-of-type(5) > h1 {
+    text-align: center;
+    width: 100%;
+    font-family: "Source Sans Pro-light", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 0 0 56px;
+    letter-spacing: 0;
+    color: #071629;
+    line-height: 1.1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    gap: 140px;
+}
+
+.row .item {
+    padding: 0;
+    flex: 0 0 350px;
+    max-width: 350px;
+}
+
+.row .item h2 {
+    position: relative;
+    font-family: "Source Sans Pro-bold", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0;
+    color: #071629;
+    margin: 0 0 30px;
+    text-align: left;
+}
+
+.row .item p {
+    position: relative;
+    font-family: "Source Sans Pro-Regular", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #07162980;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 0;
+    max-width: 345px;
+    text-align: left;
+}
+
+main section:nth-of-type(5) .row + .row {
+  margin-top: 90px;
+}
+
+/* ====================FOOTER SECTION ================================= */
+
+footer {
+    background-color: #071629;
+    width: 1440px;
+    height: 249px;
+}
+
+footer > div {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 95px 0 35px;
+}
+
+footer > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+footer > div > div > img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+footer > div > div > div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+footer > div > div > div a {
+    display: inline-flex;
+}
+
+footer > div > div > div a img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+footer p {
+    margin: 35px 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+}
