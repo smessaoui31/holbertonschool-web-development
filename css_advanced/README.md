@@ -1,3 +1,5 @@
+![Background](template/background.png)
+
 # CSS Advanced - Task 0: SmileSchool
 
 ## Description
