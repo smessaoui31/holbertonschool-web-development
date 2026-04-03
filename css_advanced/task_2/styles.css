@@ -1,36 +1,4 @@
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_bold.otf);
-    font-weight: 600;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_light.otf);
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_italic.otf);
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url(../assets/source-sans-pro_regular.otf);
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: SpinCycleOT;
-    src: url(../assets/spin-cycle-ot.otf);
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 
 /* ----- GENERAL ----- */
 
@@ -48,7 +16,11 @@ html {
 
 body {
     background-color: white;
-    font-family: SourceSansPro;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
     color: white;
     text-align: center;
 }
@@ -80,7 +52,7 @@ header div {
 
 header a {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     text-align: left;
 }
@@ -94,7 +66,6 @@ main {
 }
 
 a {
-    font-family: SourceSansPro;
     color: white;
     text-align: center;
 }
@@ -105,13 +76,17 @@ section {
 
 .hero .title h1 {
     font-size: 120px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 .title p {
     width: 100%;
     max-width: 250px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 25px;
@@ -124,7 +99,7 @@ section {
 }
 
 section.hero {
-    background-image: url("../assets/background.png");
+    background-image: url("../template/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,19 +140,17 @@ section .pros {
 }
 
 section .pros h2 {
-	font-family: SourceSansPro;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 32px;
     padding-top: 75px;
 }
 
 .purple-word {
-    font-weight: 600;
+    font-weight: 400;
     color: #C271FF;
 }
 
 section .people blockquote {
-    font-family: SourceSansPro;
     font-weight: 400;
 }
 
@@ -235,21 +208,22 @@ section.author div div {
 }
 
 section.author blockquote {
-    font-family: SourceSansPro;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0px;
     padding-bottom: 25px;
     color: white;
     text-align: left;
 }
 
 section.author .name {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 22px;
 }
 
 section.author .occupation {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 22px;
     font-style: italic;
 }
@@ -278,7 +252,7 @@ section.tutorials .item {
 
 section.tutorials h1 {
     color: black;
-    font-weight: 300;
+    font-weight: 400;
     padding-bottom: 75px;
 }
 
@@ -291,12 +265,12 @@ section.tutorials h2 {
 
 section.tutorials h3 {
     color: #C271FF;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 
 section.tutorials p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     width: 240px;
 }
@@ -339,7 +313,7 @@ section.tutorials p {
 .length {
     color: #C271FF;
     text-align: right;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 section.memberships {
@@ -353,7 +327,7 @@ section.memberships {
 }
 
 .memberships h1 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .members {
@@ -378,13 +352,13 @@ section.memberships {
 
 .member h2 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .member p {
     font-size: 14px;
-    font-weight: 300;
-    line-height: 26px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 section.faq {
@@ -404,28 +378,29 @@ section.faq p {
 
 section.faq h1 {
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 400;
     padding-bottom: 45px;
 }
 
 section.faq h2 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: left;
 }
 
 section.faq p {
     color: rgba(7, 22, 41, 0.5);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
-    line-height: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
 }
 
 .faq-bloc {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 50px;
     width: 75%;
 }
@@ -484,5 +459,5 @@ footer a {
 .footer-all p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
 }
