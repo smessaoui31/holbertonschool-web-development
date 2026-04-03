@@ -318,6 +318,7 @@ section.tutorials p {
 
 section.memberships {
     background-color: #071629;
+    min-height: 593px;
     display: flex;
     flex-direction: column;
     gap: 75px;
