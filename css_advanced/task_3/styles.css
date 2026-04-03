@@ -181,6 +181,7 @@ section .people img {
 section.author {
     background-color: #C271FF;
     width: 100%;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
