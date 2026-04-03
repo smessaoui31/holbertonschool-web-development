@@ -4,7 +4,9 @@
 
 ## Description
 
-This project covers the fundamentals of HTML by building the structure of a web page from scratch using semantic HTML5 elements. No CSS or JavaScript is applied — the focus is purely on the HTML skeleton and proper document structure.
+This project covers the fundamentals of HTML by building the structure of a web page from scratch using semantic HTML5 elements.
+No CSS or JavaScript is applied — the focus is purely on the HTML skeleton and proper document structure.
+Each task progressively builds on the previous one, resulting in a fully structured web page that follows W3C standards and best practices for accessible, meaningful markup.
 
 ## Project Structure
 
