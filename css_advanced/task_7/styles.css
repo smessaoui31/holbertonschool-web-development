@@ -181,6 +181,7 @@ section .people img {
 section.author {
     background-color: #C271FF;
     width: 100%;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,6 +198,7 @@ section.author .quote-all {
 
 section.author img {
     width: 160px;
+    border-radius: 50%;
 }
 
 section.author div div {
